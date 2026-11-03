@@ -2227,7 +2227,7 @@ Animation utility classes */
 /* Compact, icon-only appearance control at the top-right of the page. */
 .st-key-theme_toggle {
     position: fixed;
-    top: 12px;
+    top: 4.25rem;
     right: 20px;
     z-index: 9999;
 }
@@ -2489,7 +2489,7 @@ Animation utility classes */
 
 .st-key-theme_toggle {
     position: fixed !important;
-    top: 12px !important;
+    top: 4.25rem !important;
     right: 20px !important;
     z-index: 9999 !important;
 }
