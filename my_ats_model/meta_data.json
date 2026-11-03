@@ -1,0 +1,14 @@
+{
+  "base_model": "all-mpnet-base-v2",
+  "fine_tuned_model": "my_ats_model",
+  "dataset": "cleaned_resumeJD_pairs.csv",
+  "total_pairs": 280,
+  "train_pairs": 196,
+  "val_pairs": 42,
+  "test_pairs": 42,
+  "base_mae": 0.19464273861476353,
+  "epochs": 11,
+  "batch_size": 16,
+  "fine_tuned_mae": 0.09812468112224625,
+  "improvement_pct": 49.59
+}
