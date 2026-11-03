@@ -329,12 +329,12 @@ with st.sidebar:
             if "error" in oauth:
                 st.caption(f"Google sign-in unavailable: {oauth['error']}")
             else:
-                # Escape Streamlit's embedded content and navigate the current tab
-                # to Google. Keep the custom class for its animated styling.
-                st.markdown(
-                    f'<a href="{oauth["url"]}" target="_top" '
-                    'class="google-oauth-btn">Continue with Google</a>',
-                    unsafe_allow_html=True,
+                # Streamlit's native link handles external OAuth navigation safely
+                # from its sandboxed app frame (it opens in a new tab).
+                st.link_button(
+                    "Continue with Google",
+                    oauth["url"],
+                    use_container_width=True,
                 )
                 
 

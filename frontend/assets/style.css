@@ -2625,3 +2625,28 @@ Animation utility classes */
     transform: translateY(1px);
 }
 
+/* Streamlit-native Google OAuth link button. */
+[data-testid="stLinkButton"] a {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 54px;
+    box-sizing: border-box;
+    border-radius: 11px !important;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none !important;
+    transition: background 180ms ease, border-color 180ms ease,
+                color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+
+[data-testid="stLinkButton"] a:hover {
+    transform: translateY(-2px) scale(1.01);
+    box-shadow: 0 8px 18px rgba(50, 120, 90, 0.22);
+}
+
+[data-testid="stLinkButton"] a:active {
+    transform: translateY(1px);
+}
+
